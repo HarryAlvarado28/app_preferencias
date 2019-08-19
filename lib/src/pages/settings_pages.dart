@@ -21,6 +21,7 @@ class _SettingsPageState extends State<SettingsPage> {
     // TODO: implement initState
     super.initState();
     // cargarPref();
+    prefs.ultimaPagina = SettingsPage.routeName;
     _genero = prefs.genero;
     _colorSecundario = prefs.colorSecundario;
     _textEditingController = TextEditingController(text: prefs.nombreUsuario);

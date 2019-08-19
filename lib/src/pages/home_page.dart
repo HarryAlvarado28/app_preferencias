@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:preferencias/src/shared_prefs/preferencias_usuario.dart';
 import 'package:preferencias/src/widgets/menu_widget.dart';
- 
+
 class HomePage extends StatelessWidget {
   static final String routeName = 'home';
   final prefs = PreferenciasUsuario();
 
   @override
   Widget build(BuildContext context) {
+    prefs.ultimaPagina = HomePage.routeName;
     return Scaffold(
       appBar: AppBar(
         title: Text('Preferencias de Usuario'),
