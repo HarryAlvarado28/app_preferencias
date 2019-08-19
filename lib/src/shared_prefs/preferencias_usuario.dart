@@ -51,9 +51,4 @@ class PreferenciasUsuario {
   set ultimaPagina(String value) {
     _prefs.setString('ultimaPagina', value);
   }
-
-  // Ninguna de estas propiedades se usa
-  // bool _colorSecundario;
-  // int _genero;
-  // String _nombre;
 }
