@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:preferencias/src/shared_prefs/preferencias_usuario.dart';
 import 'package:preferencias/src/widgets/menu_widget.dart';
 
 class HomePage extends StatelessWidget {
   static final String routeName = 'home';
-  // const HomePage ({Key key}) : super(key: key);
+  final prefs = PreferenciasUsuario();
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +18,7 @@ class HomePage extends StatelessWidget {
         children: <Widget>[
           Text('Color segundario:'),
           Divider(),
-          Text('Genera:'),
+          Text('Genera: ${prefs.genero}'),
           Divider(),
           Text('Nombre usuario:'),
           Divider(),
